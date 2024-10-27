@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и запись</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<h2>Регистрация</h2>
+<form id="registrationForm">
+    <form id="registrationForm">
+        <input type="text" id="login" placeholder="Логин" required>
+        <div id="loginError" class="error-message"></div>
+    
+        <input type="password" id="password" placeholder="Пароль" required>
+        <div id="passwordError" class="error-message"></div>
+    
+        <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
+        <div id="confirmPasswordError" class="error-message"></div>
+    
+        <div>Дата рождения</div>
+        <input type="date" id="birthdate" placeholder="Дата рождения" required>
+        <div id="birthdateError" class="error-message"></div>
+    
+        <input type="text" id="fullName" placeholder="ФИО" required>
+        <div id="fullNameError" class="error-message"></div>
+    
+        <input type="tel" id="phone" placeholder="Номер телефона" required>
+        <div id="phoneError" class="error-message"></div>
+    
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    </form>
+</form>
+
+<h2>Запись на прием</h2>
+<form id="appointmentForm">
+    <select id="doctor" required>
+        <option value="" disabled selected hidden>Выберите врача</option>
+        <option value="therapist">Терапевт</option>
+        <option value="cardiologist">Кардиолог</option>
+        <option value="dermatologist">Дерматолог</option>
+        <option value="neurologist">Невролог</option>
+    </select>
+    
+    <select id="service" required>
+        <option value="" disabled selected hidden>Выберите услугу</option>
+    </select>
+    
+    <select id="availableDates" required>
+        <option value="" disabled selected hidden>Выберите дату и время</option>
+    </select>
+    <button type="submit">Записаться</button>
+  
+</form>
+
+
+
+</body>
+</html>
